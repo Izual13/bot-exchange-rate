@@ -1,21 +1,14 @@
 (ns clj-tools.core
-  (:require [org.httpkit.client :as http]))
-
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
-
-;;(foo "123")
-
-
+  (:require [org.httpkit.client :as http]
+            [clojure.tools.nrepl.server :as nrepl.server]
+            [cider.nrepl :as cider]))
 
 
 (http/get "https://google.com" {:as :text}
   (fn [{:keys [status headers body error opts]}]
        (println status)
+       (println body)
     ))
-
 
     (println 12)
 

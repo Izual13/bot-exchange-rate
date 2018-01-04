@@ -1,0 +1,5 @@
+{:deps
+ {
+    cider/cider-nrepl           {:mvn/version "0.16.0"}
+    http-kit                    {:mvn/version "2.2.0"}
+    org.clojure/tools.namespace {:mvn/version "0.2.11"}}}
