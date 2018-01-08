@@ -3,7 +3,7 @@
               [cider.nrepl :as cider]))
   
   (defn -main []
-    (let [port 8080]
+    (let [port 8000]
       (nrepl.server/start-server 
         :port port
         :handler cider/cider-nrepl-handler)
@@ -12,3 +12,6 @@
                           (Thread. #(clojure.java.io/delete-file ".nrepl-port")))
         (println "nrepl on " port)))
   
+
+
+        
