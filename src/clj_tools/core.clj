@@ -40,7 +40,7 @@
 (defn set-interval [callback ms] 
   (future (while true (do (Thread/sleep ms) (callback)))))
       
-; (def job (set-interval #(spit "log.txt" (str (get-usd) "\n") :append true) 1000))
+(def job (set-interval #(spit "log.txt" (str (get-usd) "\n") :append true) 6000))
       
 (future-cancel job)
       
