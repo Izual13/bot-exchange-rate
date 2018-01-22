@@ -72,7 +72,7 @@
 
         
 (defn message-handler [{update-id :update_id {{chat-id :id} :chat text :text} :message}] 
-  (do (println text) (change-action text chat-id update-id) (update-last-message-id update-id)))        
+  (do (change-action text chat-id update-id) (update-last-message-id update-id)))        
 
 (defn main-task [] (doseq [message (parse-updates (get-updates))] (message-handler message)))
 
