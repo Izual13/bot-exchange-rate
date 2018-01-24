@@ -7,7 +7,8 @@
     [org.clojure/tools.namespace "0.2.11"]
     [http-kit "2.2.0"]]
   :main clj-tools.core
-  :aot [clj-tools.core])
+  :aot [clj-tools.core]
+  :plugins [[lein-ancient "0.6.15"]])
 
 
 
