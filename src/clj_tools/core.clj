@@ -2,7 +2,8 @@
   (:require [org.httpkit.client :as http]
             [clojure.tools.nrepl.server :as nrepl.server]
             [clojure.data.json :as json]
-            [cider.nrepl :as cider]))
+            [cider.nrepl :as cider])
+  (:gen-class))
 
 
 
