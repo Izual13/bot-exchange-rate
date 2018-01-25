@@ -8,6 +8,7 @@
     [http-kit "2.2.0"]]
   :main clj-tools.core
   :aot [clj-tools.core]
+  :uberjar-name "../docker/app/app.jar"
   :plugins [[lein-ancient "0.6.15"]])
 
 
